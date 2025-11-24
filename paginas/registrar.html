@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="stylesheet" href="../css/estilos.comuns.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Registrar</title>
+</head>
+<body>
+    <main >
+        <div class="left">
+            <div>
+                <img class="logo" src="../assents/logo.png" alt="AeroElite">
+                <h1>Registrando</h1>
+                <p>Entre no mundo do Aerolite, aqui contém os melhores pilotos para o seu lazer e segurança</p>
+                <div class="icone-rede-sociais">
+
+                <span><a href="https://www.youtube.com" class="fa-brands fa-facebook"></a></span>
+                <span><a href="https://www.youtube.com" class="fa-brands fa-twitter"></a></span>
+                <span><a href="https://www.youtube.com" class="fa-brands fa-instagram"></a></span>
+                <span><a href="https://www.youtube.com" class="fa-brands fa-youtube"></a></span>
+                
+                </div>
+            </div>
+
+            
+        </div>
+        
+       <div class="right">
+    <h1>Registrar</h1>
+    <form id="registroForm" action="../php/registro--login.php" method="post">
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="emailInput">
+        </div>
+
+        <div class="password-container">
+            <label for="password">Senha</label>
+            <input type="password" required name="senha" id="senhaInput">
+            <i class="fa-solid fa-eye" id="toggleSenha1"></i>
+        </div>
+
+        <div class="password-container">
+            <label for="password">Confirme Senha</label>
+            <input type="password" required name="confirma_senha" id="confirmaSenhaInput">
+            <i class="fa-solid fa-eye" id="toggleSenha2"></i>
+            <p id="senhaErro" class="mensagem-erro"></p>
+        </div>
+
+        <button name="cadastro">
+            Registrar Agora
+        </button>
+    </form>
+    </div>
+<script src="../js/registrar.js"></script>
+   </main>
+
+   <footer class="site-footer">
+        <div class="footer-content">
+            <div class="divider"></div>
+
+            <div class="footer-primary">
+                <div class="footer-copyright">
+                    © 2025 Elite Aviation. Todos os direitos reservados.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="footer-certifications">
+                <div class="cert-title">Certificações</div>
+                <div class="cert-list">
+                    ANAC • IATA • ISO 9001 • IOSA
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/registrar.js"></script>
+    
+</body>
+</html>
